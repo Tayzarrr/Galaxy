@@ -128,16 +128,6 @@ Video disembunyikan dari halaman, tetapi tetap dipakai untuk pelacakan. Kode apl
 | Animasi terasa berat | Turunkan `PARTICLE_COUNT`, misalnya menjadi `10000` |
 | Port 8000 sudah dipakai | Gunakan port `8001`, kemudian buka `http://localhost:8001` |
 
-## 📤 Upload ke GitHub
-
-Panduan lengkap ada di **[PANDUAN_GITHUB.md](PANDUAN_GITHUB.md)**, termasuk pembuatan repository kosong, cara membuka PowerShell, konfigurasi Git, push pertama, dan pembaruan berikutnya.
-
-## 📝 Catatan pengembangan
-
-Logika bentuk, pemetaan gestur, warna, dan 20.000 partikel mengikuti sumber. Versi terpisah menambahkan deklarasi HTML5, viewport, deskripsi halaman, penanganan kegagalan startup kamera, serta penyesuaian kanvas ketika jendela berubah ukuran.
-
-Three.js memakai versi **r128** seperti sumber. URL MediaPipe mengikuti sumber dan belum mengunci versi. Proyek memerlukan internet dan tidak menyertakan pustaka eksternal untuk penggunaan offline. Tidak ada lisensi distribusi yang ditambahkan karena lisensi kode sumber belum ditentukan pemiliknya.
-
 ---
 
 <div align="center">
