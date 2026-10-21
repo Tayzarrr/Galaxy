@@ -1,0 +1,29 @@
+<!DOCTYPE html> <!-- Menetapkan dokumen sebagai HTML5. -->
+<html lang="id"> <!-- Menentukan bahasa halaman sebagai bahasa Indonesia. -->
+<head> <!-- Membuka metadata dan pemuatan dependensi halaman. -->
+    <meta charset="UTF-8"> <!-- Mendukung teks Indonesia dan emoji dengan UTF-8. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Menyesuaikan lebar halaman dengan perangkat. -->
+    <meta name="description" content="Galaxy: visualisasi 20.000 partikel 3D dengan kontrol gestur tangan."> <!-- Menjelaskan isi halaman. -->
+    <title>Galaxy | Hand Gesture Particles</title> <!-- Menentukan judul tab browser. -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Memuat aturan tampilan dari berkas CSS terpisah. -->
+    <script defer src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script> <!-- Memuat pelacak tangan MediaPipe setelah HTML dibaca. -->
+    <script defer src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script> <!-- Memuat utilitas pengambilan bingkai kamera. -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script> <!-- Memuat pustaka Three.js r128 untuk grafis 3D. -->
+    <script defer src="js/scene.js"></script> <!-- Membuat ruang 3D, kamera, renderer, dan buffer partikel. -->
+    <script defer src="js/shapes.js"></script> <!-- Menghasilkan koordinat lima bentuk partikel. -->
+    <script defer src="js/particles.js"></script> <!-- Membuat objek partikel dan target bentuk awal. -->
+    <script defer src="js/gestures.js"></script> <!-- Mengaktifkan kamera dan menerjemahkan gestur menjadi bentuk. -->
+    <script defer src="js/animation.js"></script> <!-- Menjalankan transisi bentuk, warna, dan rotasi. -->
+</head> <!-- Menutup bagian metadata halaman. -->
+<body> <!-- Membuka isi halaman yang ditampilkan. -->
+    <div id="info"> <!-- Menampung petunjuk bentuk yang tersedia. -->
+        <div class="hint-box">🪐 SATURNUS</div> <!-- Menampilkan petunjuk bentuk Saturnus. -->
+        <div class="hint-box">🤟 LOVE</div> <!-- Menampilkan petunjuk bentuk hati; gestur sebenarnya dijelaskan dalam README. -->
+        <div class="hint-box">👋 TANGAN</div> <!-- Menampilkan petunjuk bentuk tangan. -->
+        <div class="hint-box">🚀 ROKET</div> <!-- Menampilkan petunjuk bentuk roket. -->
+        <div class="hint-box">🌌 GALAXY</div> <!-- Menampilkan petunjuk bentuk galaksi. -->
+    </div> <!-- Menutup kelompok petunjuk bentuk. -->
+    <div id="status-display" role="status">MENGAKTIFKAN KAMERA...</div> <!-- Menampilkan status kamera atau bentuk yang aktif. -->
+    <video id="input_video" playsinline></video> <!-- Menyediakan gambar kamera untuk MediaPipe tanpa pemutar layar penuh. -->
+</body> <!-- Menutup isi halaman. -->
+</html> <!-- Mengakhiri dokumen HTML. -->

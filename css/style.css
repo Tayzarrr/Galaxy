@@ -1,0 +1,40 @@
+body { /* Mengatur tampilan dasar halaman. */
+    margin: 0; /* Menghilangkan jarak luar bawaan. */
+    background: #000; /* Mengatur warna atau transparansi latar. */
+    overflow: hidden; /* Menyembunyikan konten yang melewati batas layar. */
+    font-family: 'Segoe UI', sans-serif; /* Memilih jenis huruf antarmuka. */
+} /* Mengakhiri aturan tampilan elemen ini. */
+
+#info { /* Mengatur posisi petunjuk bentuk di kiri atas. */
+    position: absolute; /* Menempatkan elemen relatif terhadap area halaman. */
+    top: 15px; /* Menentukan jarak dari tepi atas. */
+    left: 15px; /* Menentukan jarak dari tepi kiri. */
+    color: #00d4ff; /* Menentukan warna teks. */
+    z-index: 10; /* Menempatkan petunjuk di atas kanvas. */
+    pointer-events: none; /* Membiarkan interaksi melewati teks petunjuk. */
+    font-size: 11px; /* Menentukan ukuran huruf. */
+} /* Mengakhiri aturan tampilan elemen ini. */
+
+#status-display { /* Mengatur teks status di bagian bawah layar. */
+    position: absolute; /* Menempatkan elemen relatif terhadap area halaman. */
+    bottom: 30px; /* Menentukan jarak dari tepi bawah. */
+    width: 100%; /* Memakai seluruh lebar halaman. */
+    text-align: center; /* Meratakan teks ke tengah. */
+    color: white; /* Menentukan warna teks. */
+    font-size: 22px; /* Menentukan ukuran huruf. */
+    font-weight: bold; /* Menebalkan teks status. */
+    text-shadow: 0 0 15px #00d4ff; /* Menambahkan efek cahaya di belakang teks. */
+    pointer-events: none; /* Membiarkan interaksi melewati teks petunjuk. */
+} /* Mengakhiri aturan tampilan elemen ini. */
+
+.hint-box { /* Mengatur kotak petunjuk setiap bentuk. */
+    background: rgba(0, 212, 255, 0.1); /* Mengatur warna atau transparansi latar. */
+    border-left: 3px solid #00d4ff; /* Menambahkan garis aksen pada sisi kiri. */
+    padding: 6px 12px; /* Memberikan ruang di dalam kotak. */
+    margin-bottom: 5px; /* Memberikan jarak di bawah kotak. */
+    border-radius: 0 5px 5px 0; /* Membulatkan sudut kanan kotak. */
+} /* Mengakhiri aturan tampilan elemen ini. */
+
+video { /* Menyembunyikan video sumber tanpa menghentikan pemrosesan kamera. */
+    display: none; /* Menyembunyikan elemen video dari tampilan. */
+} /* Mengakhiri aturan tampilan elemen ini. */

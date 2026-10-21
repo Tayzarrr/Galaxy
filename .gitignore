@@ -1,0 +1,14 @@
+# Mengabaikan berkas sistem Windows.
+Thumbs.db
+# Mengabaikan metadata folder Windows.
+Desktop.ini
+# Mengabaikan berkas sistem macOS.
+.DS_Store
+# Mengabaikan konfigurasi editor lokal.
+.vscode/
+# Mengabaikan arsip hasil pengemasan.
+*.zip
+# Mengabaikan dependensi Node lokal jika dipakai saat pengembangan.
+node_modules/
+# Mengabaikan cache Python dari server atau alat bantu lokal.
+__pycache__/
